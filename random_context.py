@@ -126,15 +126,6 @@ def applyRule(rule1, pformV):
     return latest_pform # return the updated set with the rule1 applied to the relevant label-coordinates pair and a count of such label-coordinate pair in the set
     ## for loop end
 
-
-
-
-
-
-
-
-
-
 """
 this methods calculates the coordinates of the new squares that will replace an existing one
 @:param basq - the parent square
@@ -269,15 +260,11 @@ if __name__ == "__main__":
     ## delete the draw object and prepare for next production
     del draw
 
-
-
-
     ## i to keep track of number of images producted
     i = 1
     latest_pform = pform #copies the coordiantes of the initial production into rform
 
     while hasApplicabeRule(rules, latest_pform):
-
 
         current_labels=[]
         for sq in latest_pform:
@@ -304,8 +291,6 @@ if __name__ == "__main__":
                     elif (len(permitting)==0) and (len(forbidding)>0):
                                 if apply_forbidding_context(rule,latest_pform)==True:
                                     latest_pform = applyRule(rule, latest_pform) # apply the current rule
-
-
 
                     else:
                                     print("cant apply rule")
