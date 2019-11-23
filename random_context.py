@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 import math
 import random
 from copy import deepcopy
-from G_free import *
+from rcgrammar import *
 
 
 full_path = os.path.realpath(__file__) # fulle path to this file
