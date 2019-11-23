@@ -24,6 +24,9 @@ pform1 = [{"L": (0, 0, 1/6, 1/6)}, {"w": (1/6, 0, 1/3, 1/6)}, {"w": (1/3, 0, 1/2
          , {"M": (1/2, 0, 1, 1/2)},
          {"M": (0, 1/2, 1/2, 1)}, {"M": (1/2, 1/2, 1, 1)}]
 
+"""
+This method to selects the rule randomly
+"""
 
 def get_rule(label, rules):
     rule1=[]
@@ -66,7 +69,9 @@ def apply_permitting_context(rule,pform1):
         if (len(permitting_context) > 0):
             if permitting_context.issubset(current_labels):
                 return True
-
+"""
+This method checks if there are applicable rules.
+"""
 
 def hasApplicabeRule(rules, latest_pform):
     for rule in rules:
